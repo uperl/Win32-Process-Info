@@ -13,3 +13,5 @@
 /pm_to_blib
 /ref
 /Build.bat
+*.tmp
+/Win32-Process-Info-*

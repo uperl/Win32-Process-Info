@@ -18,6 +18,7 @@ my %args = (
     dist_author => 'Tom Wyant (wyant at cpan dot org)',
     dist_abstract => 'Get information on arbitrary processes in Windows NT',
     module_name => 'Win32::Process::Info',
+    configure_requires => { 'Module::Build' => 0.42 },
     build_requires => $meta->build_requires(),
     requires => $meta->requires(
 	perl => $meta->requires_perl(),

@@ -39,7 +39,7 @@ use warnings;
 
 use base qw{ Win32::Process::Info };
 
-our $VERSION = '1.021';
+our $VERSION = '1.022';
 
 use vars qw{%mutator};
 use Carp;
