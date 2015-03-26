@@ -17,3 +17,5 @@ CVS/
 ^TODO$
 ^USED_BY$
 ^Win32-Process-Info-
+
+^.git
