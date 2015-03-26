@@ -1,7 +1,7 @@
 Revision history for Win32-Process-Info
 
-
-  - Fix for 64 bit Perls on Windows (rt101658)
+1.022  2015-03-26
+  - Fix for 64 bit Perls on Windows (plicease rt101658)
 
 1.021		2014-12-02	T. R. Wyant
   No changes since 1.020_01
