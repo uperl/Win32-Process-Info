@@ -2,10 +2,11 @@ package main;
 
 use strict;
 use warnings;
-
 use Test::More 0.88;
 
 use Win32::Process::Info;
+
+BEGIN { eval 'use Win32::Getppid' }
 
 my $dad;
 eval {
@@ -13,14 +14,12 @@ eval {
     1;
 } or do {
     plan skip_all => 'getppid() not implemented, or failed';
-    exit;
 };
 
 my $pi = eval {
     Win32::Process::Info->new(undef, 'WMI,PT')
 } or do {
-    plan skip_all => 'unable to instantiate Win32::Process::Info';
-    exit;
+    plan skip_all => "unable to instantiate Win32::Process::Info ($@)";
 };
 
 my $my_pid = $pi->My_Pid();

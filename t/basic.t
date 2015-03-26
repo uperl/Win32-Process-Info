@@ -6,6 +6,8 @@ use warnings;
 use File::Spec;
 use Test::More 0.88;	# For done_testing();
 
+BEGIN { eval 'use Win32::Getppid' }
+
 my $my_user = eval { getlogin || getpwuid ($<) };
 
 my $reactos = $^O eq 'MSWin32'
