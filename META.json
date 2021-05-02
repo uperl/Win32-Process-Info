@@ -1,0 +1,59 @@
+{
+   "abstract" : "Get information on arbitrary processes in Windows NT",
+   "author" : [
+      "Tom Wyant (wyant at cpan dot org)"
+   ],
+   "dynamic_config" : 1,
+   "generated_by" : "ExtUtils::MakeMaker version 7.62, CPAN::Meta::Converter version 2.150010",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : 2
+   },
+   "name" : "Win32-Process-Info",
+   "no_index" : {
+      "directory" : [
+         "inc",
+         "t",
+         "xt"
+      ]
+   },
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Test::More" : "0.88"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "0"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Carp" : "0",
+            "File::Spec" : "0",
+            "Time::Local" : "0",
+            "perl" : "5.006",
+            "strict" : "0",
+            "warnings" : "0"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/uperl/Win32-Process-Info/issues"
+      },
+      "homepage" : "https://metacpan.org/pod/Win32::Process::Info",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/uperl/Win32-Process-Info.git",
+         "web" : "https://github.com/uperl/Win32-Process-Info"
+      }
+   },
+   "version" : "1.022",
+   "x_serialization_backend" : "JSON::PP version 4.06"
+}
